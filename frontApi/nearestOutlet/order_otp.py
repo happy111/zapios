@@ -38,7 +38,7 @@ def email_send_module(post_data):
         ]
         url = "https://api.sendgrid.com/v3/mail/send"
         headers = {'Content-type': 'application/json',
-            "Authorization": "Bearer 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",
+            "Authorization": "Bearer ",
            'Accept': 'application/json'}
         data = {
               "personalizations": [
