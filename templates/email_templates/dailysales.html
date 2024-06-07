@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{Company}}</title>
+            <style>
+hr.new2 {
+  border-top: 1px dashed black;
+  width:400px;
+  margin-left:0px;
+}
+      </style>
+   </head>
+   <body style="margin: 0px; padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; background:{{data.accent_color}};">
+      <div style="font-family: arial; width: 100%; background: #ffffff; margin: 0px auto;">
+         <div style="background: {{data.accent_color}}; padding:10px; text-align: center; border-bottom-color:  {{data.accent_color}}; border-bottom-width: 1px; ">
+<!--       <img src={{data.logo}} width="100" height="100"> -->
+         </div>
+         <div style=" padding-top: 10px; padding-left: 10px; padding-bottom: 10px; padding-right: 10px;">
+            <p style="font-size: 15px; font-weight: bold; margin-bottom: 10px; ">Hi </p>
+            <p style="font-size: 14px; line-height: 20px;  margin-bottom: 10px;">Your  Sale Report for :{{time}}</p> 
+            </div>
+            
+            </div>
+         
+
+
+<div style=" margin-bottom: 10px; font-size: 16px; padding: 10px 5px;">
+  
+
+    <table>
+    
+    
+         <tr>
+            <td colspan="3">Overall Performance (All Outlets Of {{Company}})</td>
+          
+           </tr>
+           <tr>
+              <tr>
+                <td colspan="3"><hr class="new2"></td>
+             </tr>
+
+
+            <tr>
+                <td>Total Sale Today</td>
+                <td>: </td>
+                <td> ₹ {{alltotal}}</td>
+            </tr>
+            <tr>
+                <td>Order Count</td>
+                <td>: </td>
+                <td> {{totalordercount}}</td>
+            </tr>
+            <tr>
+                <td>Avg. Order:</td>
+                <td>: </td>
+                <td> ₹ {{average_order}}</td>
+            </tr>
+            <tr>
+                <td>MTD Total::</td>
+                <td>: </td>
+                <td> ₹ {{totalmtd}}</td>
+            </tr>
+      {{#each items1}}
+           
+             <tr>
+                <td colspan="3"><hr class="new2"></td>
+             </tr>
+             <!--  <tr>
+                <td>Brand Name</td>
+                   <td>: </td>
+                <td> {{this.Company}}</td>
+            </tr> -->
+            <tr>
+                <td>Outlet Name</td>
+                <td>: </td>
+                <td> {{this.outlet}}</td>
+            </tr>
+
+
+            <tr>
+                <td>Total Sale Today</td>
+                <td>: </td>
+                <td>  ₹ {{this.total}}</td>
+            </tr>
+            <tr>
+                <td>Order Count</td>
+                <td>: </td>
+                <td> {{this.order_count}}</td>
+            </tr>
+            <tr>
+                <td>Avg. Order</td>
+                <td>: </td>
+                <td> ₹ {{this.average_order}}</td>
+            </tr>
+            <tr>
+                <td>MTD Total</td>
+                <td>: </td>
+                <td> ₹ {{this.mtd}}</td>
+            </tr>
+
+
+               {{/each}}
+
+   
+
+            
+
+    </table>
+
+
+</div>
+   </body>
+</html>

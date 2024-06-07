@@ -1,0 +1,346 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 21:35+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Brands/views.py:73 Brands/views.py:167
+msgid "Url Not Found"
+msgstr "URLが見つかりません。"
+
+#: Brands/views.py:162
+msgid "Menu id not found!!"
+msgstr "メニューIDが見つかりません。"
+
+#: Brands/views.py:210
+msgid "Title with this name already exists!!"
+msgstr "この名前は既に存在しています。"
+
+#: Configuration/views.py:102 Configuration/views.py:240
+#: Configuration/views.py:436
+msgid "Payment Configuration data is not valid to update!!"
+msgstr "決済設定データの更新が有効ではありません。"
+
+#: Configuration/views.py:112 Configuration/views.py:446
+msgid "Payment credentials are updated successfully!!"
+msgstr "支払いの信用情報が更新されました。"
+
+#: Configuration/views.py:163 Configuration/views.py:578
+#: Configuration/views.py:625 Configuration/views.py:672
+#: Configuration/views.py:855
+msgid "Active status data is not valid!!"
+msgstr "アクティブステータスが有効ではありません。"
+
+#: Configuration/views.py:177 Configuration/views.py:592
+msgid "Payment Configuration is activated successfully!!"
+msgstr "決済設定が有効になりました。"
+
+#: Configuration/views.py:179 Configuration/views.py:594
+msgid "Payment Configuration is deactivated successfully!!"
+msgstr "決済設定が無効になりました。"
+
+#: Configuration/views.py:194 Configuration/views.py:609
+msgid "Payment Configuration id is not valid to update!!"
+msgstr "決済設定IDの更新が有効ではありません。"
+
+#: Configuration/views.py:246
+msgid "Payment Configuration data updation api worked well!!"
+msgstr "決済設定データのアップデートAPIは正常に動作しました。"
+
+#: Configuration/views.py:276
+msgid "Required data is not found!!"
+msgstr "指定されたデータは見つかりませんでした。"
+
+#: Configuration/views.py:290
+msgid "Active tax data listing api worked well!!"
+msgstr "アクティブな税のデータリストAPIは正常に動作しました。"
+
+#: Configuration/views.py:348
+msgid "Please contact to super-admin to set parameters for this!!"
+msgstr "管理者にこのパラメータを設定するようリクエストしてください。"
+
+#: Configuration/views.py:472
+msgid "Theme Configuration data is not valid to update!!"
+msgstr "テーマ設定データが更新されていません。"
+
+#: Configuration/views.py:482
+msgid "Theme Configuration is updated successfully!!"
+msgstr "テーマ設定が更新されました。"
+
+#: Configuration/views.py:513
+msgid "Analytics Configuration data is not valid to update!!"
+msgstr "分析設定データが更新されていません。"
+# Is this about GoogleAnalytics?
+
+#: Configuration/views.py:523
+msgid "Google Analytics Configuration is updated successfully!!"
+msgstr "Google Analyticsの設定が更新されました。"
+
+#: Configuration/views.py:639
+msgid "Theme Configuration is activated successfully!!"
+msgstr "テーマ設定が有効になりました。"
+
+#: Configuration/views.py:641
+msgid "Theme Configuration is deactivated successfully!!"
+msgstr "テーマ設定が無効になりました。"
+
+#: Configuration/views.py:686
+msgid "Delivery & Packaging Configuration setting is activated successfully!!"
+msgstr "配達・梱包設定が有効になりました。"
+
+#: Configuration/views.py:688
+msgid "Delivery & Packaging Configuration setting is deactivated successfully!!"
+msgstr "配達・梱包設定が無効になりました。"
+
+#: Configuration/views.py:733
+msgid "Google Analytics Configuration setting is activated successfully!!"
+msgstr "Google Analytics設定が有効になりました。"
+
+#: Configuration/views.py:735
+msgid "Google Analytics Configuration setting is deactivated successfully!!"
+msgstr "Google Analytics設定が無効になりました。"
+
+#: Configuration/views.py:869
+msgid "Payment Status is activated successfully!!"
+msgstr "決済ステータスが有効になりました。"
+
+#: Configuration/views.py:871
+msgid "Payment Status is deactivated successfully!!"
+msgstr "決済ステータスが無効になりました。"
+
+#: Configuration/views.py:886
+msgid "Payment Status is not valid to update!!"
+msgstr "決済ステータスの更新が無効です。"
+
+#: Customers/Api/Authorization/registration.py:94
+msgid "User with the entered mobile number already exists..Please login directly!!"
+msgstr "この電話番号のユーザは既に存在しています。ログインしてください。"
+
+#: Customers/Api/Authorization/registration.py:104
+msgid "User with the entered email already exists..Please login directly!!"
+msgstr "このメールアドレスのユーザは既に存在しています。ログインしてください。"
+
+#: Customers/Api/Authorization/registration.py:148
+msgid "You have been registered successfully..A confirmation OTP has been sent on "
+  "your email id and mobile number!!"
+msgstr "ユーザ登録を完了しました。確認用ワンタイムパスワードがメールアドレスと電話番号宛に送付されました。"
+
+#: Customers/Api/Authorization/registration.py:233
+msgid "The entered mobile OTP is expired!!"
+msgstr "ワンタイムパスワードは有効期限切れです。"
+
+#: Customers/Api/Authorization/registration.py:264
+msgid "Your email has been successfully verified!!"
+msgstr "メールアドレスを確認しました。"
+
+#: Customers/Api/Authorization/registration.py:294
+msgid "Your mobile has been successfully verified!!"
+msgstr "電話番号を確認しました。"
+
+#: Customers/Api/Authorization/signin.py:97
+#: ZapioApi/Api/Authorization/auth.py:297
+#: ZapioApi/Api/Authorization/google_auth.py:185
+#: ZapioApi/Api/Authorization/google_auth.py:438
+msgid "You are logged in now!!"
+msgstr "ログインしました。"
+
+#: Customers/Api/Authorization/signin.py:104
+#: ZapioApi/Api/Authorization/auth.py:237
+#: ZapioApi/Api/Authorization/auth.py:259
+#: ZapioApi/Api/Authorization/auth.py:315
+msgid "Please enter valid login credentials!!"
+msgstr "有効なログイン情報を入力してください。"
+
+#: Customers/Api/Authorization/signin.py:110
+msgid "This mobile number does not exist in the system!!"
+msgstr "この携帯電話番号は既に使われています。"
+
+#: Customers/Api/Authorization/signin.py:139
+#: ZapioApi/Api/Authorization/auth.py:360
+msgid "You have been successfully logged out!!"
+msgstr "ログアウトしました。"
+
+#: Customers/views.py:116
+msgid "Customer is activated successfully!!"
+msgstr "顧客情報は有効になりました。"
+
+#: Customers/views.py:118
+msgid "Customer is deactivated successfully!!"
+msgstr "顧客情報は無効になりました。"
+
+#: Outlet/views.py:155
+msgid "Outlet with this name already exists..Please try other!!"
+msgstr "入力された店舗名は存在しています。別の名前を入力してください。"
+
+#: Outlet/views.py:214
+msgid "Outlet is registered successfully under your brand!!"
+msgstr "店舗が保存されました。"
+
+#: Outlet/views.py:275
+msgid "Receipt Configuration is created successfully!!"
+msgstr "レシート設定が作成されました。"
+
+#: Outlet/views.py:298
+msgid "Outlet name already exists!!"
+msgstr "店舗名は既に存在しています。"
+
+#: Product/views.py:93
+msgid "Category Edited Successfully!!"
+msgstr "カテゴリが正常に編集されました!!"
+
+#: Product/views.py:117
+msgid "Category Added Successfully!!"
+msgstr "カテゴリが正常に編集されました!!"
+
+#: Product/views.py:1582
+msgid "Sub-Category has been updated successfully!!"
+msgstr "カテゴリが更新されました。"
+
+#: Product/views.py:1685
+msgid "Food Type creation/updation api worked well!!"
+msgstr "料理タイプ更新APIは正常に動作しました。"
+
+#: Product/views.py:1772
+msgid "Vriant updated successfully!!"
+msgstr "必須オプションが更新されました。"
+
+#: Product/views.py:1791
+msgid "Vriant created successfully!!"
+msgstr "必須オプションが作成されました。"
+
+#: Product/views.py:1978
+msgid "Addon group is updated successfully!!"
+msgstr "追加メニューグループが更新されました。"
+
+#: Product/views.py:2131
+msgid "Addon Updated Successfully!!"
+msgstr "追加メニューが更新されました。"
+
+#: Product/views.py:2437
+msgid "Product is created successfully!!!!"
+msgstr "商品が作成されました。"
+
+#: ZapioApi/Api/Authorization/auth.py:219
+msgid "You are logged in now sss!!"
+msgstr "あなたは今sssにログインしています。"
+
+#: ZapioApi/Api/Authorization/auth.py:244
+msgid "ManagerProfile account is not active..Please contact admin!!"
+msgstr "マネージャプロフィールが無効です。管理者に問い合わせてください。"
+
+#: ZapioApi/Api/Authorization/auth.py:274
+msgid "Your account is not activated, please open your registered email!!"
+msgstr "アカウントが無効です。"
+
+#: ZapioApi/Api/Authorization/auth.py:322
+msgid "This Username does not exist in the system!!"
+msgstr "ユーザ名が存在していません。"
+
+#: ZapioApi/Api/Authorization/change_pwd.py:76
+msgid "Your password don't match!!"
+msgstr "パスワードが無効です。"
+
+#: ZapioApi/Api/Authorization/change_pwd.py:95
+msgid "Your credentials are not authenticated!!"
+msgstr "登録情報が認証されていません。"
+
+#: ZapioApi/Api/Authorization/change_pwd.py:125
+msgid "Your password has been changed successfully!!"
+msgstr "パスワードが変更されました。"
+
+#: ZapioApiV2/Area/area_action.py:70
+#, fuzzy
+#| msgid "Category Edited Successfully!!"
+msgid "Locality is activated successfully!!"
+msgstr "カテゴリが正常に編集されました!!"
+
+#: ZapioApiV2/Area/area_action.py:72
+#, fuzzy
+#| msgid "Category Edited Successfully!!"
+msgid "Locality is deactivated successfully!!"
+msgstr "カテゴリが正常に編集されました!!"
+
+#: ZapioApiV2/Area/area_create_update.py:105
+#, fuzzy
+#| msgid "Category Edited Successfully!!"
+msgid "Area name is created successfully!!"
+msgstr "カテゴリが正常に編集されました。"
+
+#: ZapioApiV2/Area/area_retrieve.py:73
+msgid "Area retrieval api worked well!!"
+msgstr "エリア検索APIが機能しました。"
+
+#: ZapioApiV2/Measurement/unit_create_update.py:112
+#, fuzzy
+#| msgid "Category Edited Successfully!!"
+msgid "Unit name is created successfully!!"
+msgstr "カテゴリが正常に編集されました!!"
+
+#: discount/views.py:145
+msgid "Discount is updated successfully!!"
+msgstr "値引き額が更新されました。"
+
+#: discount/views.py:253
+msgid "Coupon data is not valid to update!!"
+msgstr "クーポン情報が更新できませんでした。"
+
+#: discount/views.py:284
+msgid "Coupon is updated sucessfully!!"
+msgstr "クーポン情報が更新されました。"
+
+#: discount/views.py:287
+msgid "Coupon with this code already exists!!"
+msgstr "クーポンのコードは既に存在しています。"
+
+#: discount/views.py:313
+msgid "Coupon is created successfully!!"
+msgstr "クーポンが作成されました。"
+
+#: discount/views.py:410
+msgid "Quantity Combo data is not valid to update!!"
+msgstr "コンボ量は更新されていません。"
+
+#: discount/views.py:428
+msgid "Combo is updated sucessfully!!"
+msgstr "コンボはアップデートされました。"
+
+#: discount/views.py:438
+msgid "Quantity based Combo with this name and product mapping already exists!!"
+msgstr "この名前と商品のコンボはすでに存在しています。"
+
+#: discount/views.py:448
+msgid "Combo is created successfully!!"
+msgstr "コンボは作成されました。"
+
+#: static/rest_framework_swagger/templates/rest_framework_swagger/index.html:28
+msgid "Logout"
+msgstr "ログアウトしました。"
+
+#: static/rest_framework_swagger/templates/rest_framework_swagger/index.html:30
+msgid "Session Login"
+msgstr "ログインしました。"
+
+#: static/rest_framework_swagger/templates/rest_framework_swagger/index.html:41
+msgid "You are logged in as: "
+msgstr "ログインしました。："
+
+#: static/rest_framework_swagger/templates/rest_framework_swagger/index.html:43
+msgid "Viewing as an anoymous user"
+msgstr "匿名ユーザーとして閲覧中"
+
+#: static/rest_framework_swagger/templates/rest_framework_swagger/index.html:55
+msgid "Powered by "
+msgstr "Powered by "

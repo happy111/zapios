@@ -1,0 +1,37 @@
+<doctype html>
+<html>
+<head>
+	<title>Emailer</title>
+</head>
+
+<body>
+ <center><div style="width: 600px;" >
+	<br><br><br>
+	<div> <img src="https://zapio-admin.com/media/company_logo/1.png" width="150" ></div>
+	</div>
+	 <br><br>
+	 	 
+	 <div style="font-family: Arial; color: #28292a;">
+	 	<h2>Hi {{ user.company_name }}</h2>
+	    <p>We were told that you verify your email on Path.</p>
+        <p style="font-size: 10pt"> To verify your email address,please click this button:
+        </p>
+	 </div>
+	 <div> 
+	 	<button style="background-image: linear-gradient(-30deg, #145388 0%, #145388 100%); border-radius: 5px; border:none; color: white;  padding: 15px 32px; text-align: center; font-size: 16px; margin: 20px,20px,20px,20px;cursor: pointer;"> 
+	      <a href="{{ reset_link }}" style="color: white; text-decoration: none;">Verify Email</a>
+	    </button>
+	    <!-- <p style="font-family: arial; color: #28292a; font-size: 10pt">This link will expire in two hours.</p> -->
+	</div><br>
+	    <p style="font-family: arial; color: #145388; font-size: 10pt">Thanks, <br>
+          Team Aizo <br><a href="https://cms.aizotec.com/" style="color:#145388;">https://cms.aizotec.com/</a>
+        </p><br>
+	<div style="width: 600; height: 147; background-color: #ececec;">
+	
+	</div>
+
+
+ </div></center>
+
+</body>
+</html>

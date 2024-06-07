@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Insta Pizza</title>
+      <style>
+hr.new2 {
+  border-top: 1px dashed black;
+  width:400px;
+  margin-left:0px;
+}
+      </style>
+   </head>
+   <body style="margin: 0px; padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">
+      <div style="font-family: arial; width: 100%; background: #ffffff; margin: 0px auto;">
+         <div style=" padding-top: 10px; padding-left: 10px; padding-bottom: 10px; padding-right: 10px;">
+
+
+
+<strong style="font-weight: bold; font-size: 15px; line-height: 1.6;"></strong>
+   <p style="margin: 0;line-height: 1.6;">
+        {{company_name}}<br>
+        Shop Name: {{ outletname}}<br>
+        Order # {{ order }} <br>
+        Order Date: {{order_date}}<br>
+        Order Accepted Time: {{ accepted_time }}
+
+        <br>
+   </p>
+    <hr class="new2"> 
+<p style="font-size: 15px;  margin-bottom: 10px; ">Hi {{customer}},thank you for placing an order with {{company_name}}.  To view the status of your order please  <a href={{track_url}}>click here</a><br></p>
+     
+
+
+    <hr class="new2"> 
+    <strong> Order Summary:</strong>
+    <hr class="new2"> 
+    <table>
+       {{#each items1}}
+      <tr>
+          <td>{{ this.name }} &nbsp;*<span>&nbsp;</span>{{ this.quantity }}</td>
+      </tr>
+      <tr>          
+        <td> Total : &nbsp; ₹ {{this.price}}</td>
+      </tr>
+      {{#each this.add_ons}}
+      <tr>
+         <span><span>{{addon_name}}</span>
+      </tr>
+        {{/each}}
+      <tr>
+        <td><hr class="new2"> </td>
+      </tr>
+
+    </table>
+  {{/each}}
+
+    <table>
+      <tr>
+          <td>SubTotal : &nbsp; ₹ {{sub_total}}</td>
+      </tr>
+      <tr>
+        <td><hr class="new2"> </td>
+      </tr>
+
+      <tr>
+          <td>Discount : &nbsp; ₹ {{ discount_value}} </td>
+      </tr>
+      <tr>
+        <td><hr class="new2"> </td>
+      </tr>
+
+      <tr>
+          <td>Delivery Charge : &nbsp; ₹ {{delivery_charge}}</td>
+      </tr>
+     <tr>
+        <td><hr class="new2"> </td>
+      </tr>
+      <tr>
+          <td>Package Charge : &nbsp; ₹ {{packing_charge}}</td>
+      </tr>
+
+      <tr>
+        <td><hr class="new2"> </td>
+      </tr>
+
+      <tr>
+          <td>Tax : &nbsp; ₹ {{tax}}</td>
+      </tr>
+      <tr>
+        <td><hr class="new2"> </td>
+      </tr>
+
+      <tr>
+          <td>TOTAL : &nbsp; ₹ {{ total_bill_value}}</td>
+      </tr>
+      <tr>
+          <td>Payment Status : &nbsp; </td>
+      </tr>
+      <tr>
+        <td><hr class="new2"> </td>
+      </tr>
+
+      <tr>
+          <td>Payment Method : &nbsp; </td>
+      </tr>
+      <tr>
+        <td><hr class="new2"> </td>
+      </tr>
+      <tr>
+          <td>Transaction #<span>&nbsp;{{payment_id}}</span></td>
+      </tr>
+      <tr>
+        <td><hr class="new2"></td>
+      </tr>
+      <tr>
+          <td>Comments<span>&nbsp;</span></td>
+      </tr>
+      <tr>
+        <td><hr class="new2"> </td>
+      </tr>
+
+      <tr>
+          <td>Customer Information:</td>
+      </tr>
+
+      <tr>
+          <td>Name:<span>&nbsp;{{customer}}</span></td>
+      </tr>
+     <tr>
+          <td>Mobile:<span>&nbsp;{{mobile_number}}</span></td>
+      </tr>
+
+      <tr>
+          <td>Address:<span>&nbsp;{{address1}}</span></td>
+      </tr>
+      <tr>
+          <td>Locality:<span>&nbsp;{{locality}}</span></td>
+      </tr>
+
+      <tr>
+          <td>City:<span>&nbsp;{{city}}</span></td>
+      </tr>
+      <tr>
+          <td>State:<span>&nbsp;</span></td>
+      </tr>
+      <tr>
+          <td>Pincode:<span>&nbsp;{{data.pincode}}</span></td>
+      </tr>
+      <tr>
+          <td>Country:<span>&nbsp; India</span></td>
+      </tr>
+      <tr>
+        <td><hr class="new2"> </td>
+      </tr>
+
+    </table>
+
+
+
+
+      </div>
+   </body>
+</html>
+

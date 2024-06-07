@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Insta Pizza</title>
+   </head>
+   <body style="margin: 0px; padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; background:{{data.accent_color}};">
+      <div style="font-family: arial; width: 100%; background: #ffffff; margin: 0px auto;">
+         <!-- header -->
+         <div style="background: {{data.accent_color}}; padding:10px; text-align: center; border-bottom-color: {{data.accent_color}}; border-bottom-width: 1px; border-bottom-style: solid">
+            <img src={{data.logo}} width="100" height="100">
+         </div>
+         <!-- header /-->
+         <!-------- body -------->
+         <div style=" padding-top: 10px; padding-left: 10px; padding-bottom: 10px; padding-right: 10px;">
+
+      <p style="font-size: 15px; font-weight: bold; margin-bottom: 10px; ">Dear :{{data.customer}} </p>
+
+
+     <p style="font-size: 14px; line-height: 20px;  margin-bottom: 10px; ">Kindly find the Order summary details below:</p>
+          
+         
+
+
+
+<div style="font-weight: bold; margin-bottom: 10px; font-size: 16px; color: {{data.textColor}};    background: {{data.accent_color}};
+    padding: 10px 5px;">Order Summary</div>
+<!-- row -->
+<div>
+
+
+<div style="float: left; width: 300px; font-size: 14px; margin-right: 10px; margin-bottom: 15px;line-height: 1.6;">
+
+
+
+<strong style="font-weight: bold; font-size: 15px; color: {{data.textColor}};line-height: 1.6;">Insta Pizza</strong>
+ <p style="margin: 0;line-height: 1.6;">
+   {{ data.outletname}}<br>
+   {{ data.username }}<br>
+    {{ data.address }}<br>
+<!--     {{ data.email }}<br>
+    {{ data.mobile }}<br> -->
+ </p>
+
+<br>
+
+<strong style="font-weight: bold; font-size: 15px; color: {{data.textColor}};line-height: 1.6;">Order Details</strong><br>
+Order id : {{data.orderid}} <br>
+Order Time: {{data.order_time}}<br>
+Item Count: {{ data.total_items }}<br>
+Payment Mode : {% if data.patmentmode == '1' %} 
+                <span> Online Payment </span>
+               {% else %}
+              <span> Cash on Delivery </span>
+               {% endif %}  <br>
+
+Transaction ID : {{ data.payment_id }}
+
+
+
+
+
+
+</div>
+
+
+<div style="float: left; width: 300px;  font-size: 14px;  margin-bottom: 15px;line-height: 1.6;">
+<strong style="font-weight: bold; font-size: 15px; color: {{data.textColor}};line-height: 1.6;">Customer Details</strong><br>
+
+Customer Name: {{data.customer}} <br>
+Email: {{data.emails}}<br> 
+Mobile No.: {{data.mobile_number}}<br>
+Address : {{data.address1}}
+</div>
+
+
+<div style="clear: both;"></div>
+
+</div>
+<!-- row /-->
+
+
+
+
+
+
+
+
+
+
+
+ <!------- table ---------------->
+ <div style="overflow-x:auto;">     
+                  <table border="0" style="width: 100%; border-collapse: collapse;    border-bottom: 1px solid gainsboro;">
+                     <thead>
+                        <tr>
+                           <th style="font-size: 14px; color: {{data.textColor}};background: {{data.accent_color}}; padding-top: 10px; padding-right: 7px; padding-bottom: 10px; padding-left: 10px; width: 35%;    text-align: left;" width="100">Product Name</th>
+                             <th style="font-size: 14px; color: {{data.textColor}};background: {{data.accent_color}}; padding-top: 10px; padding-right: 7px; padding-bottom: 10px; padding-left: 10px; text-align: left;width: 15%;">Size</th>
+                                            <th style="font-size: 14px; color: {{data.textColor}};background: {{data.accent_color}}; padding-top: 10px; padding-right: 7px; padding-bottom: 10px; padding-left: 10px; text-align: left;width: 15%;">Type</th>
+
+
+                        <th style="font-size: 14px; color: {{data.textColor}};background: {{data.accent_color}}; padding-top: 10px; padding-right: 7px; padding-bottom: 10px; padding-left: 10px; text-align: left;width: 15%;">Quantity</th>
+
+                          <th style="font-size: 14px; color: {{data.textColor}};background: {{data.accent_color}}; padding-top: 10px; padding-right: 7px; padding-bottom: 10px; padding-left: 10px; text-align: left;width: 15%;">Price</th>
+
+
+
+                           <th style="font-size: 14px; color: {{data.textColor}};background: {{data.accent_color}}; padding-top: 10px; padding-right: 7px; padding-bottom: 10px; padding-left: 10px;    text-align: left;">Subproduct</th>
+                        </tr>
+                      </thead>
+                          {% for i in data.order_cart_list %}
+                      <tr style="border-bottom: 1px solid gainsboro;">
+                      <td style="font-size: 14px;background: ghostwhite;padding: 10px;">{{ i.name }}</td>
+                        <td style="font-size: 14px;background: ghostwhite;padding: 10px;">
+                {{ i.size }}</td>
+                     <td style="font-size: 14px;background: ghostwhite;padding: 10px;">
+                {{ i.type }}</td>
+
+                <td style="font-size: 14px;background: ghostwhite;padding: 10px;">
+                {{ i.quantity }}</td>
+                      <td style="font-size: 14px;background: ghostwhite;padding: 10px;">
+                    <span>&#8377; </span>  {{ i.price }}</td>
+                      <td style="font-size: 14px;background: ghostwhite;padding: 10px;">
+                        <table>
+                            {% for j in i.add_ons %}
+                          <tr>
+                            <td>{{ j.addon_name }}</td>
+                            <td><span>&#8377; </span> {{ j.price }}</td>
+                          </tr>
+                       {% endfor %}
+                        </table>
+                      </td>
+    
+                    </tr>
+             {% endfor %}
+                  </table>                        
+ <!------- table / ------------->
+    <div style="display: flex;margin: 0 auto;max-width: 141px;">  
+      <div>
+        <div style="margin-top: 20px;">Tax :</div>
+        <div style="margin-top: 6px;">Discount : </div>
+        <div style="margin-top: 6px;">Total Amount : </div>
+      </div>
+      <div>
+        <div style="margin-top: 20px;">&nbsp; <span>&#8377; </span>{{ data.tax}} </div>
+        <div style="margin-top: 6px;">&nbsp; <span>&#8377; </span> {{ data.discount_value}} </div>
+        <div style="margin-top: 6px;">&nbsp; <span>&#8377; </span> {{ data.total_bill_value}}</div>
+      </div>
+    </div>
+         <div style=" padding-top: 5px; padding-left: 5px; padding-right: 5px; padding-bottom: 5px; text-align: center;">
+            <div style="width: 200px; margin-left: auto; margin-right: auto; ">
+               <table width="380" style="width: 200px; border: none;" border="0">
+               </table>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+
